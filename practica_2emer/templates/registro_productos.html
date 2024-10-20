@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Productos</title>
+</head>
+<body>
+    <h1>Registro de Productos</h1>
+    <form method="POST">
+        <label for="producto">Producto:</label>
+        <input type="text" name="producto" required><br>
+
+        <label for="categoria">Categoría:</label>
+        <input type="text" name="categoria" required><br>
+
+        <label for="existencia">Existencia:</label>
+        <input type="number" name="existencia" required><br>
+
+        <label for="precio">Precio:</label>
+        <input type="number" name="precio" step="0.01" required><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <a href="{{ url_for('index') }}">Volver al Menú</a>
+</body>
+</html>
